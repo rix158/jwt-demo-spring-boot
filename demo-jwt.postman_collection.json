@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "f29a759c-09a0-4a1d-a728-dab70efc076c",
+		"name": "demo-jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user?user=rix158&password=12345",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "rix158"
+						},
+						{
+							"key": "password",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hello",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJEZW1vSldUIiwic3ViIjoicml4MTU4IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTYxMDExMzI3NywiZXhwIjoxNjEwMTEzNzc3fQ.L4ptM3OJbnCEo1KtKeQUigpYAYSdT-Nmr25LlngBUV4MPim3BBo2maVVAUHl0p-6HoOewoPiQmkRZ1DjgGtDeQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/hello",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
